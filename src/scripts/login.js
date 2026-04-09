@@ -25,4 +25,20 @@ button.addEventListener('click', event => {
    };
 
    alert('Acesso permitido.');
+
+   window.location.href = './home.html';
+});
+
+const checkbox = document.querySelector('#checkbox-login');
+
+checkbox.addEventListener('change', () => {
+    const type = password.getAttribute('type');
+
+    if (type === 'password') {
+        password.setAttribute('type', 'text');
+        return;
+    };
+
+    password.setAttribute('type', 'password');
+
 });
